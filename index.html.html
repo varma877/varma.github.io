@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Creators</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background: linear-gradient(-45deg, #ff0000, #000000, #ff0000, #000000);
+            background-size: 400% 400%;
+            animation: backgroundAnimation 10s infinite ease-in-out;
+        }
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+            border-radius: 50%; /* Makes the logo round */
+            object-fit: cover;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .youtube-link {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #black;
+            margin-top: 20px;
+            animation: slideIn 1.5s ease-in-out;
+        }
+        .youtube-logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://thingspeak.mathworks.com/apps/matlab_visualizations/605145?height=auto&width=auto" class="logo">
+    <h1>NextGen Creators</h1>
+    <a href="https://www.youtube.com/@nextgencreators-155" target="_blank" class="youtube-link">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube" class="youtube-logo">
+        Visit NextGen Creators on YouTube
+    </a>
+</body>
+</html>
